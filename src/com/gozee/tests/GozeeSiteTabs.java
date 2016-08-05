@@ -1,4 +1,5 @@
-ampalapackage com.gozee.tests;
+package com.gozee.tests;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

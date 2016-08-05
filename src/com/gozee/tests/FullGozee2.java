@@ -23,32 +23,43 @@ public class FullGozee2 {
 		jse.executeScript("scroll(0,400)");
 		Thread.sleep(2000);
 		
+		
 		//Code to read the place holders in each section
 		
 		
 		driver.findElement(By.id("ember808")).sendKeys("Uganda");
-		driver.findElement(By.id("ember815")).click();		
-		System.out.println("Number of Facilities in Uganda :" + driver.findElement(By.className("result-text")).getText());	   
+		driver.findElement(By.id("ember815")).click();
+		Thread.sleep(2000);
+		System.out.println("Number of Facilities in Uganda:" + driver.findElement(By.className("result-text")).getText());	   
 		
 		//Code to scroll back
-		
-		driver.findElement(By.id("ember1069")).sendKeys("Kenya");
-		driver.findElement(By.id("ember1075")).click();		
-		System.out.println("Number of Facilities in Kenya :" + driver.findElement(By.className("result-text")).getText());
+		driver.navigate().back();
+		Thread.sleep(2000);
+		driver.findElement(By.id("ember1011")).sendKeys("Kenya");
+		driver.findElement(By.id("ember1017")).click();
+		Thread.sleep(2000);
+		System.out.println("Number of Facilities in Kenya:" + driver.findElement(By.className("result-text")).getText());
 		
 		//Code to scroll back
-		driver.findElement(By.id("ember1149")).sendKeys("Kampala");
-		driver.findElement(By.id("ember1155")).click();		
-		System.out.println("Number of Facilities in Kampala :" + driver.findElement(By.className("result-text")).getText());	
+		driver.navigate().back();
+		Thread.sleep(2000);
+		driver.findElement(By.id("ember1091")).sendKeys("Kampala");
+		driver.findElement(By.id("ember1097")).click();
+		Thread.sleep(2000);
+		System.out.println("Number of Facilities in Kampala:" + driver.findElement(By.className("result-text")).getText());	
 		
 		jse.executeScript("scroll(0,400)");
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//h3[@title='Care Clinic - test']")).click();	
-		driver.findElement(By.id("ember1575")).click();	
+		driver.findElement(By.xpath("//h3[@title='Care Clinic - test']")).click();
+		jse.executeScript("scroll(0,-400)");
+		Thread.sleep(2000);
+		driver.findElement(By.id("ember1517")).click();
+		
+		jse.executeScript("scroll(0,400)");	
 		
 		//Code to select Calendar
-		
+		driver.findElement(By.className("slot can-create")).click();		
 		driver.findElement(By.id("ember2029")).sendKeys("John");
 		driver.findElement(By.id("ember2031")).sendKeys("Smith");
 		driver.findElement(By.id("ember2054")).sendKeys("Medical Checkup");
@@ -56,7 +67,7 @@ public class FullGozee2 {
 		
 		
 		
-		
+		driver.navigate().to("http://next.cliniccommunicator.com");
 
 	}
 

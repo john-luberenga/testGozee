@@ -30,40 +30,7 @@ public class TestGozee {
 		Thread.sleep(5000);
 		System.out.println(driver.getTitle());
 		
-		//Scrolling the page down
-		Thread.sleep(5000);
-		driver.findElement(By.id("ember753-select-nu0.6605481872046969")).getAttribute("placeholder");
 		
-		/*driver.findElement(By.cssSelector("#ember808")).click();
-		driver.findElement(By.cssSelector("#ember808")).clear();
-		driver.findElement(By.cssSelector("#ember808")).sendKeys("Kenya");
-		driver.findElement(By.cssSelector("#ember815")).click();
-		driver.navigate().back();
-		// ERROR: Caught exception [ERROR: Unsupported command [getEval | selenium.browserbot.getCurrentWindow().scrollTo(100,400) | ]]
-		driver.findElement(By.cssSelector("#ember1069")).clear();
-		driver.findElement(By.cssSelector("#ember1069")).sendKeys("Uganda");
-		driver.findElement(By.cssSelector("#ember1075")).click();
-		driver.navigate().back();
-		// ERROR: Caught exception [ERROR: Unsupported command [getEval | selenium.browserbot.getCurrentWindow().scrollTo(100,400) | ]]
-		driver.findElement(By.cssSelector("#ember1149")).clear();
-		driver.findElement(By.cssSelector("#ember1149")).sendKeys("kampala");
-		driver.findElement(By.cssSelector("#ember1155")).click();
-		driver.findElement(By.cssSelector("h3[title=\"Care Clinic - test\"]")).click();
-		// ERROR: Caught exception [ERROR: Unsupported command [getEval | selenium.browserbot.getCurrentWindow().scrollTo(100,200) | ]]
-		driver.findElement(By.cssSelector("#ember1575")).click();
-		// ERROR: Caught exception [ERROR: Unsupported command [getEval | selenium.browserbot.getCurrentWindow().scrollTo(100,400) | ]]
-		driver.findElement(By.xpath("//div[@id='ember543']/section[3]/div[4]/div/article/div/table/tr[5]/td/div")).click();
-		driver.findElement(By.cssSelector("#ember2029")).clear();
-		driver.findElement(By.cssSelector("#ember2029")).sendKeys("John");
-		driver.findElement(By.cssSelector("#ember2031")).clear();
-		*/
-				
-		
-		
-		
-		
-		
-
 	}
 
 }
