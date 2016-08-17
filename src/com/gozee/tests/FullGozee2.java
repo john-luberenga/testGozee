@@ -1,5 +1,7 @@
 package com.gozee.tests;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -21,16 +23,19 @@ public class FullGozee2 {
 		
 		driver.get("http://healthadvs2.cloudapp.net/");
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
 		JavascriptExecutor jse = (JavascriptExecutor)driver;
 		jse.executeScript("scroll(0,400)");
 		Thread.sleep(2000);
 		
 		
 		//Code to read the place holders in each section
+		//driver.findElement(By.xpath("//*[contains(@id='st796-input-nu0')]")).sendKeys("Uganda");
+		driver.findElement(By.className("ember-view ember-text-field text-input")).sendKeys("Uganda");
 		
-		
-		driver.findElement(By.id("ember843")).sendKeys("Uganda");
-		driver.findElement(By.id("ember855")).click();
+		//driver.findElement(By.id("ember843")).sendKeys("Uganda");
+		//driver.findElement(By.id("ember855")).click();
 		Thread.sleep(2000);
 		System.out.println("Number of Facilities in Uganda:" + driver.findElement(By.className("result-text")).getText());	   
 		Thread.sleep(2000);
